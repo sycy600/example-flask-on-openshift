@@ -13,7 +13,7 @@ Create project structure::
 
     bin/buildout
 
-Run application (application is accessible at [http://localhost:5000](http://localhost:5000) )::
+Run application (application is accessible at [http://localhost:5000](http://localhost:5000))::
 
     bin/todoer
 
