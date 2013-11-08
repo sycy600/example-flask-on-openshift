@@ -24,10 +24,10 @@ Tests are placed in directory ``src/todoer/tests``.
 
 The pattern for test filename is ``*_tests.py``.
 
-Run only tests:
+Run only tests and check coverage:
 
     bin/test
 
-Run tests, check flake8:
+Run tests, check flake8 (pep8 and complexity):
 
     bin/check
