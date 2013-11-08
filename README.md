@@ -1,4 +1,4 @@
-![Build status](https://secure.travis-ci.org/sycy600/todoer.png)
+![Build status](https://secure.travis-ci.org/sycy600/todoer.png?branch=master)
 
 Write what you have done and what you want to do.
 
