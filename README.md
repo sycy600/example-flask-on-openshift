@@ -1,4 +1,4 @@
-.. image:: https://secure.travis-ci.org/sycy600/todoer.png
+![Build status](https://secure.travis-ci.org/sycy600/todoer.png)
 
 Write what you have done and what you want to do.
 
@@ -13,7 +13,7 @@ Create project structure::
 
     bin/buildout
 
-Run application (application is accessible at http://localhost:5000)::
+Run application (application is accessible at [http://localhost:5000](http://localhost:5000) )::
 
     bin/todoer
 
