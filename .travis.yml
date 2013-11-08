@@ -1,0 +1,14 @@
+language: python
+python:
+  - "2.7"
+install:
+  # Buildout needs new setuptools merged with Distribute
+  - pip install --upgrade setuptools
+
+  # Get buildout
+  - python bootstrap.py
+
+  # Setup project
+  - bin/buildout
+script:
+  - bin/test
