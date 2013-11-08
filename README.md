@@ -5,15 +5,15 @@ Write what you have done and what you want to do.
 How to setup
 ============
 
-Get ``buildout``::
+Get ``buildout``:
 
     python2.7 bootstrap.py
 
-Create project structure::
+Create project structure:
 
     bin/buildout
 
-Run application (application is accessible at [http://localhost:5000](http://localhost:5000))::
+Run application (application is accessible at [http://localhost:5000](http://localhost:5000)):
 
     bin/todoer
 
@@ -24,10 +24,10 @@ Tests are placed in directory ``src/todoer/tests``.
 
 The pattern for test filename is ``*_tests.py``.
 
-Run only tests::
+Run only tests:
 
     bin/test
 
-Run tests, check flake8::
+Run tests, check flake8:
 
     bin/check
