@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+# Text color constants.
+green='\e[0;32m'
+nocolor='\e[0m'
+
+# Get all source files from source directory.
+source_files=$(find ${buildout:src-directory} -name "*.py")
+
+echo -e "$green ======= flake8 ======= $nocolor"
+# Ignore star * import warnings and check functions if they don't have bigger
+# complexity than 10.
+${buildout:bin-directory}/flake8 --ignore=F403 --max-complexity 10 $source_files
+
+echo -e "$green ======= test ======= $nocolor"
+# Run unit tests.
+${buildout:bin-directory}/test

@@ -1,10 +1,14 @@
+from __future__ import unicode_literals
 from flask import Flask
+
+
 app = Flask(__name__)
 
 
 @app.route("/")
 def index():
-    return "Hello world"
+    return b"Hello world"
 
-if __name__ == "__main__":  # pragma: no cover
+
+def run():  # pragma: no cover
     app.run(debug=True)
