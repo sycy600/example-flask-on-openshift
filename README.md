@@ -30,6 +30,6 @@ Run only tests and check coverage:
 
     bin/test
 
-Run tests, check flake8 (pep8 and complexity):
+Run tests, check flake8 (pep8 and cyclomatic complexity):
 
     bin/check
