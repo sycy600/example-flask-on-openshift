@@ -5,9 +5,11 @@ Write what you have done and what you want to do.
 How to setup
 ============
 
+Python versions supported: `2.7`, `3.3`.
+
 Get ``buildout``:
 
-    python2.7 bootstrap.py
+    python bootstrap.py
 
 Create project structure:
 
