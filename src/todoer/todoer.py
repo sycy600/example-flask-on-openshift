@@ -6,5 +6,6 @@ app = Flask(__name__)
 def index():
     return "Hello world"
 
-if __name__ == "__main__":  # pragma: no cover
+
+def run():  # pragma: no cover
     app.run(debug=True)
