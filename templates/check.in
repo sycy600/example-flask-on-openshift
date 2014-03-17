@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+source_files=$(find ${buildout:src-directory} -name "*.py")
+green='\e[0;32m'
+nocolor='\e[0m'
+echo -e "$green ======= flake8 ======= $nocolor"
+# Ignore star * import warnings.
+${buildout:bin-directory}/flake8 --ignore=F403 $source_files
+echo -e "$green ======= test ======= $nocolor"
+${buildout:bin-directory}/test
