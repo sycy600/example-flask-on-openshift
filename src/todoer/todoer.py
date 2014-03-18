@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return b"Hello world"
+    return b"Hello world OS"
 
 
 def run():  # pragma: no cover
