@@ -1,15 +1,24 @@
 language: python
 python:
-  - "2.7"
-  - "3.3"
+- '2.7'
+- '3.3'
 install:
-  # Buildout needs new setuptools merged with Distribute
-  - pip install --upgrade setuptools
+# Buildout needs new setuptools merged with Distribute
+- pip install --upgrade setuptools
 
-  # Get buildout
-  - python bootstrap.py
+# Get buildout
+- python bootstrap.py
 
-  # Setup project
-  - bin/buildout
+# Setup project
+- bin/buildout
 script:
-  - bin/test
+- bin/test
+deploy:
+  provider: openshift
+  user: sycy600@gmail.com
+  password:
+    secure: hww4CWAjPjRIMNXvLgtRFypx3BalmBkRG7h/9vaLu35jidOy08XWA1hDza+syQairbvSHIg+k2gzBZOnn5app3tSPO/8Pmmd7IfjEr+4RXgSHjZxcSnFvgQ/KrFkxrgB4DihvBFQG8JM/1COWsTQNIVLzq/1SltONZUmTIX2xa8=
+  app: todoer
+  domain: sycy600
+  on:
+    repo: sycy600/todoer
