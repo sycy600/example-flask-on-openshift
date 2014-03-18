@@ -9,4 +9,4 @@ class TodoerTestCase(unittest.TestCase):
 
     def test_index(self):
         response = self.app.get("/")
-        self.assertEqual(response.data, b"Hello world")
+        self.assertEqual(response.data, b"Hello world OS")
