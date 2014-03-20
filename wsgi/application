@@ -1,1 +1,3 @@
+# OpenShift finds entry point for application looking for WSGI handler
+# named "application" in file ./wsgi/application
 from todoer.todoer import app as application
