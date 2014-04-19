@@ -33,3 +33,8 @@ Run only tests and check coverage:
 Run tests, check flake8 (pep8 and cyclomatic complexity):
 
     bin/check
+
+Deployment
+==========
+
+Deployment is automatically performed by Travis using info in ``.travis.yml`` file. WSGI entry point object which is used by OpenShift resides in file ``wsgi/application`` and is named ``application``.
