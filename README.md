@@ -1,5 +1,3 @@
-![Build status](https://secure.travis-ci.org/sycy600/todoer.png?branch=master)
-
 An example of Flask application with setup of Buildout and unit tests which can be automatically deployed to OpenShift
 
 How to setup
